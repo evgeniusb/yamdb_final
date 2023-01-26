@@ -3,7 +3,6 @@ import os
 
 from django.conf import settings
 from django.core.management.base import BaseCommand
-
 from reviews.models import Genre
 
 FILE2IMPORT = os.path.join(settings.STATICFILES_DIRS[0], 'data/genre.csv')
