@@ -7,10 +7,10 @@ from rest_framework.decorators import action, api_view, permission_classes
 from rest_framework.permissions import AllowAny, IsAuthenticated
 from rest_framework.response import Response
 from rest_framework_simplejwt.tokens import RefreshToken
-
 from api.filters import TitleFilter
 from reviews.models import Category, Genre, Review, Title
 from users.models import User
+
 from .mixins import CreateDestroyListSet
 from .pagination import CustomPagination
 from .permissions import (AdminOrReadOnly, AuthorModeratorAdminAndReadOnly,
