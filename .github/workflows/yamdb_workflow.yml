@@ -1,7 +1,11 @@
 # .github/workflows/**yamdb_workflow.yml**
 name: yamdb-final-app workflow
 
-on: [push]
+on:
+  push:
+    branches:
+      - master
+      - main
 
 jobs:
   tests:
